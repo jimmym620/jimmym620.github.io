@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Timeline from "./Timeline";
 
 function App() {
     return (
@@ -47,8 +48,9 @@ function App() {
 
 function Home() {
     return (
-        <div>
+        <div className="home">
             <h2>Home</h2>
+            <p>Welcome to my portfolio</p>
         </div>
     );
 }
@@ -57,6 +59,7 @@ function About() {
     return (
         <div>
             <h2>About</h2>
+            <Timeline />
         </div>
     );
 }
