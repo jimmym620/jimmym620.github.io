@@ -1,7 +1,11 @@
-$background-color: #96c6b4;
+$main-color: #566a56;
+$secondary-color: #135a21;
+$tertiary-color: #4e9f3d;
+$quaternary-color: #d8e9a8;
 
 body {
-    background-color: $background-color;
+    background-color: $main-color;
+
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -17,5 +21,49 @@ code {
 
 header {
     display: flex;
+    color: $tertiary-color;
     justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.main-container {
+    color: $quaternary-color;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+
+    .navbar {
+        background-color: $secondary-color;
+        width: max(60vw, 10rem);
+        border-radius: 3px;
+
+        ul {
+            margin-top: 2rem;
+            list-style: none;
+            line-height: 4rem;
+            width: 75%;
+
+            li:hover {
+                background-color: goldenrod;
+            }
+
+            li {
+                font-size: 2rem;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.page {
+    // background-color: red;
+    width: 100%;
+    padding: 0 1rem;
 }

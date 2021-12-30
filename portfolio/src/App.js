@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Timeline from "./Timeline";
+import { SocialIcon } from "react-social-icons";
 
 function App() {
     return (
@@ -11,8 +12,8 @@ function App() {
             </header>
             <main>
                 <Router>
-                    <div>
-                        <nav>
+                    <div className="main-container">
+                        <nav className="navbar">
                             <ul>
                                 <li>
                                     <Link to="/">Home</Link>
@@ -30,12 +31,14 @@ function App() {
                         </nav>
                         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/pages" element={<Pages />} />
-                            <Route path="/contact" element={<Contact />} />
-                        </Routes>
+                        <div className="page">
+                            <Routes>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/about" element={<About />} />
+                                <Route path="/pages" element={<Pages />} />
+                                <Route path="/contact" element={<Contact />} />
+                            </Routes>
+                        </div>
                     </div>
                 </Router>
 
@@ -48,9 +51,12 @@ function App() {
 
 function Home() {
     return (
-        <div className="home">
-            <h2>Home</h2>
-            <p>Welcome to my portfolio</p>
+        <div>
+            <h3>Welcome to my portfolio</h3>
+            <p>
+                A Computer Science graduate looking to join the world of web
+                development.
+            </p>
         </div>
     );
 }
@@ -58,7 +64,9 @@ function Home() {
 function About() {
     return (
         <div>
-            <h2>About</h2>
+            <h2>About me</h2>
+
+            <h3>My current career timeline</h3>
             <Timeline />
         </div>
     );
@@ -68,6 +76,7 @@ function Pages() {
     return (
         <div>
             <h2>My Pages</h2>
+            <h4>Here is a list of some projects I have created so far:</h4>
         </div>
     );
 }
@@ -75,6 +84,20 @@ function Contact() {
     return (
         <div>
             <h2>Contact me</h2>
+            <div className="icon-container">
+                <SocialIcon
+                    url="https://github.com/jimmym620"
+                    target="_blank"
+                />
+                <SocialIcon
+                    url="https://www.linkedin.com/in/chun-ming-jimmy-man"
+                    target="_blank"
+                />
+                <SocialIcon
+                    url="https://discordapp.com/users/175963962003685376"
+                    target="_blank"
+                />
+            </div>
         </div>
     );
 }
