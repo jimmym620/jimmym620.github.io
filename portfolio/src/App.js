@@ -12,7 +12,7 @@ function App() {
                 <h1>Chun Ming Jimmy Man</h1>
             </header>
             <main>
-                <Router basename="/">
+                <Router>
                     <div className="main-container">
                         <nav className="navbar">
                             <ul>
