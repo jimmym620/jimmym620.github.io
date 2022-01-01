@@ -14,4 +14,18 @@ export default [
         tag: "None",
         desc: "Next project",
     },
+    {
+        id: 3,
+        title: "Google Clone",
+        link: "https://jimmym620.github.io/GoogleSearchPage/",
+        tag: "CSS",
+        desc: "This was one of my first projects where I learned to replicate a landing page with CSS",
+    },
+    {
+        id: 4,
+        title: "Mint Sign-up Clone",
+        link: "https://jimmym620.github.io/Mint.com_Signup_Clone/",
+        tag: "CSS",
+        desc: "This was another vanilla CSS replication project - a form for creating an account. "
+    },
 ];
