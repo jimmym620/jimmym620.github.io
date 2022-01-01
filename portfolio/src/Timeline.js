@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import timeline from "./abt-timeline-data";
 
 const Timeline = () => {
-    // const { id, heading, yearsBetween, desc } = timeline;
 
     return (
         <div className="timeline-list">

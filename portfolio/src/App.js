@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Timeline from "./Timeline";
 import { SocialIcon } from "react-social-icons";
+import Projects from "./Projects";
 
 function App() {
     return (
@@ -77,6 +78,7 @@ function Pages() {
         <div>
             <h2>My Pages</h2>
             <h4>Here is a list of some projects I have created so far:</h4>
+            <Projects />
         </div>
     );
 }
