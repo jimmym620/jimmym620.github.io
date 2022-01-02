@@ -20,6 +20,7 @@
     }
     h5 {
         @apply text-lg;
+        @apply my-4;
     }
 }
 /* $main-color: #566a56;

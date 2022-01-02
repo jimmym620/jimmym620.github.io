@@ -9,10 +9,10 @@ export default [
     },
     {
         id: 2,
-        title: "Project 2",
+        title: "My next project",
         link: "none",
         tag: "None",
-        desc: "Next project",
+        desc: "TBD",
     },
     {
         id: 3,
@@ -28,4 +28,10 @@ export default [
         tag: "CSS",
         desc: "This was another vanilla CSS replication project - a form for creating an account. "
     },
+    {
+        id: 5,
+        title: "This portfolio",
+        tag: "CSS Framework",
+        desc: "Though not finished, this portfolio was made using React-Router and Tailwind CSS"
+    }
 ];

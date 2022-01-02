@@ -9,7 +9,7 @@ const Projects = () => {
                 return (
                     <article key={id} className="project" tag={tag}>
                         <div>
-                            <h3 className="border-t-2 border-b-2 border-blue-800 w-1/2 text-center py-1 ">
+                            <h3 className="border-t-2 border-b-2 border-blue-800 bg-gray-100 w-1/2 text-center py-1 ">
                                 <a href={link} target="_blank" rel="noreferrer">
                                     {title}
                                 </a>
