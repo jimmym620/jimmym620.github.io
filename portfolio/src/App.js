@@ -7,11 +7,11 @@ import Projects from "./Projects";
 
 function App() {
     return (
-        <div className="App grid auto-cols-auto h ">
+        <div className="App flex flex-col min-h-screen ">
             <header className="m-10 grid text-center">
                 <h1>Chun Ming Jimmy Man</h1>
             </header>
-            <main>
+            <main className="flex-grow">
                 <Router>
                     <div className="main-container grid grid-cols-3 grid-rows-1">
                         <nav className="nav grid justify-items-center col-span-1">
@@ -53,7 +53,7 @@ function App() {
             </main>
 
             <footer>
-                <p className="inline-block align-text-bottom">
+                <p className="bg-blue-500 inline-block align-text-bottom">
                     This site is a work in progress
                 </p>
             </footer>
