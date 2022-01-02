@@ -8,31 +8,39 @@ import Projects from "./Projects";
 function App() {
     return (
         <>
-            <header>
+            <header className="m-10 grid justify-items-center  ">
                 <h1>Chun Ming Jimmy Man</h1>
             </header>
             <main>
                 <Router>
-                    <div className="main-container">
-                        <nav className="navbar">
+                    <div className="main-container grid grid-cols-3 grid-rows-1">
+                        <nav className="nav grid justify-items-center ">
                             <ul>
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <h3>
+                                        <Link to="/">Home</Link>
+                                    </h3>
                                 </li>
                                 <li>
-                                    <Link to="/about">About</Link>
+                                    <h3>
+                                        <Link to="/about">About</Link>
+                                    </h3>
                                 </li>
                                 <li>
-                                    <Link to="/pages">Pages</Link>
+                                    <h3>
+                                        <Link to="/pages">Pages</Link>
+                                    </h3>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Contact</Link>
+                                    <h3>
+                                        <Link to="/contact">Contact</Link>
+                                    </h3>
                                 </li>
                             </ul>
                         </nav>
                         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                        <div className="page">
+                        <div className="page col-span-2 ">
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />
@@ -42,9 +50,6 @@ function App() {
                         </div>
                     </div>
                 </Router>
-
-                <article className="current-page"></article>
-                <div className="socialBtns"></div>
             </main>
         </>
     );
@@ -53,7 +58,7 @@ function App() {
 function Home() {
     return (
         <div>
-            <h3>Welcome to my portfolio</h3>
+            <h3 className="">Welcome to my portfolio</h3>
             <p>
                 A Computer Science graduate looking to join the world of web
                 development.
