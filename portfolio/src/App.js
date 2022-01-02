@@ -7,14 +7,14 @@ import Projects from "./Projects";
 
 function App() {
     return (
-        <>
-            <header className="m-10 grid justify-items-center  ">
+        <div className="App grid auto-cols-auto h ">
+            <header className="m-10 grid text-center">
                 <h1>Chun Ming Jimmy Man</h1>
             </header>
             <main>
                 <Router>
                     <div className="main-container grid grid-cols-3 grid-rows-1">
-                        <nav className="nav grid justify-items-center ">
+                        <nav className="nav grid justify-items-center col-span-1">
                             <ul>
                                 <li>
                                     <h3>
@@ -40,7 +40,7 @@ function App() {
                         </nav>
                         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-                        <div className="page col-span-2 ">
+                        <div className="page col-span-2 grid justify-items-start text-left ">
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<About />} />
@@ -51,7 +51,13 @@ function App() {
                     </div>
                 </Router>
             </main>
-        </>
+
+            <footer>
+                <p className="inline-block align-text-bottom">
+                    This site is a work in progress
+                </p>
+            </footer>
+        </div>
     );
 }
 
