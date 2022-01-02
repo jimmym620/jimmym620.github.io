@@ -4,12 +4,33 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Timeline from "./Timeline";
 import { SocialIcon } from "react-social-icons";
 import Projects from "./Projects";
+import { useState, useEffect } from "react";
 
 function App() {
+    const [darkMode, setDarkMode] = useState(false);
+
+    const handleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
+    useEffect(() => {
+        if (darkMode) {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    }, [darkMode]);
+
     return (
-        <div className="App flex flex-col min-h-screen ">
+        <div className="App flex flex-col min-h-screen bg-gray-200 dark:bg-slate-700 dark:text-white">
             <header className="m-10 grid text-center">
                 <h1>Chun Ming Jimmy Man</h1>
+                <button
+                    onClick={handleDarkMode}
+                    className="w-[8rem] p-4 text-center text-white  bg-blue-900  rounded-lg"
+                >
+                    {darkMode ? "Light Mode" : "Dark Mode"}
+                </button>
             </header>
             <main className="flex-grow">
                 <Router>
@@ -67,7 +88,7 @@ function App() {
 function Home() {
     return (
         <div>
-            <h3 className="">Hello! Welcome to my portfolio</h3>
+            <h2 className="">Hello! Welcome to my portfolio</h2>
             <p className="w-1/2">
                 I am Computer Science graduate looking to join the world of web
                 development. At the moment, I am seeking work on front end
@@ -112,7 +133,21 @@ function About() {
 function MyProjects() {
     return (
         <div>
-            <h2>My Pages</h2>
+            <h2>My Projects</h2>
+            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 py-1">
+                Click the headings to view the projects
+            </p>
+            <p>
+                {`All of these projects can be viewed on my `} 
+                <a
+                    href="https://github.com/jimmym620"
+                    className="text-blue-600 dark:text-cyan-500 font-bold underline"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
+            </p>
             <h4>Here is a list of some projects I have created so far:</h4>
             <Projects />
         </div>
