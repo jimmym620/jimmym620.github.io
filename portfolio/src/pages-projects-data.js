@@ -9,10 +9,10 @@ export default [
     },
     {
         id: 2,
-        title: "My next project",
-        link: "none",
-        tag: "None",
-        desc: "TBD",
+        title: "Media Library",
+        link: "https://crud-media-collection.netlify.app/",
+        tag: ["React", "CSS Framework"],
+        desc: "A CRUD application used to store entries about a users media library/collection (i.e, books, movies, music). Made with React, Tailwind and localStorage ",
     },
     {
         id: 3,
@@ -26,12 +26,12 @@ export default [
         title: "Mint Sign-up Clone",
         link: "https://jimmym620.github.io/Mint.com_Signup_Clone/",
         tag: "CSS",
-        desc: "This was another vanilla CSS replication project - a form for creating an account. "
+        desc: "Another vanilla CSS replication project - a sign up form for creating a new account. ",
     },
     {
         id: 5,
         title: "This portfolio",
         tag: "CSS Framework",
-        desc: "Though not finished, this portfolio was made using React-Router and Tailwind CSS"
-    }
+        desc: "Though not finished, this portfolio was made using React-Router and Tailwind CSS",
+    },
 ];

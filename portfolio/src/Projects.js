@@ -9,7 +9,7 @@ const Projects = () => {
                 return (
                     <article key={id} className="project" tag={tag}>
                         <div>
-                            <h3 className="  bg-neutral-300 dark:bg-sky-800 w-1/2 text-center py-1 ">
+                            <h3 className="  bg-neutral-300 dark:bg-sky-800 w-1/2 text-center py-4 ">
                                 <a href={link} target="_blank" rel="noreferrer">
                                     {title}
                                 </a>

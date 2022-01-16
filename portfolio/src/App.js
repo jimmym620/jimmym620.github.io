@@ -22,7 +22,7 @@ function App() {
     }, [darkMode]);
 
     return (
-        <div className="App flex flex-col min-h-screen bg-gray-200 dark:bg-slate-700 dark:text-white">
+        <div className="App flex flex-col min-h-screen dark:bg-slate-700 dark:text-white">
             <header className="m-10 grid text-center">
                 <h1>Chun Ming Jimmy Man</h1>
                 <button
@@ -133,12 +133,12 @@ function About() {
 function MyProjects() {
     return (
         <div>
-            <h2>My Projects</h2>
-            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 py-1">
+            <h2>My completed projects </h2>
+            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 py-2 font-bold">
                 Click the headings to view the projects
             </p>
             <p>
-                {`All of these projects can be viewed on my `} 
+                {`All of these projects can be viewed on my `}
                 <a
                     href="https://github.com/jimmym620"
                     className="text-blue-600 dark:text-cyan-500 font-bold underline"
@@ -148,7 +148,7 @@ function MyProjects() {
                     GitHub
                 </a>
             </p>
-            <h4>Here is a list of some projects I have created so far:</h4>
+
             <Projects />
         </div>
     );
@@ -171,6 +171,8 @@ function Contact() {
                     target="_blank"
                 />
             </div>
+            <h3>Email: jimmym620@gmail.com</h3>
+            <h3>Phone: (+44) 7587789376</h3>
         </div>
     );
 }
