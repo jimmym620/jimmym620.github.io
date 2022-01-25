@@ -23,19 +23,19 @@ function App() {
 
     return (
         <div className="App flex flex-col min-h-screen dark:bg-slate-700 dark:text-white">
-            <header className="m-10 grid text-center">
+            <header className="m-4 grid text-center">
                 <h1>Chun Ming Jimmy Man</h1>
                 <button
                     onClick={handleDarkMode}
-                    className="w-[8rem] p-4 text-center text-white  bg-blue-900  rounded-lg"
+                    className=" w-[4rem]  p-2 text-center text-white  bg-blue-900  rounded-lg sm:p-4 sm:flex-shrink"
                 >
                     {darkMode ? "Light Mode" : "Dark Mode"}
                 </button>
             </header>
             <main className="flex-grow">
                 <Router>
-                    <div className="main-container grid grid-cols-3 grid-rows-1">
-                        <nav className="nav grid justify-items-center col-span-1">
+                    <div className="main-container md:grid md:grid-cols-3 md:grid-rows-1">
+                        <nav className="nav grid justify-items-center md:justify-items-center md:col-span-1 ">
                             <ul>
                                 <li>
                                     <h3>
@@ -88,8 +88,8 @@ function App() {
 function Home() {
     return (
         <div>
-            <h2 className="">Hello! Welcome to my portfolio</h2>
-            <p className="w-1/2">
+            <h2 className="hello">Hello! Welcome to my portfolio</h2>
+            <p className="w-4/5 mx-auto md:w-1/2 md:mx-0 ">
                 I am Computer Science graduate looking to join the world of web
                 development. At the moment, I am seeking work on front end
                 development but my goal is to eventually to move into full
@@ -134,10 +134,10 @@ function MyProjects() {
     return (
         <div>
             <h2>My completed projects </h2>
-            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 py-2 font-bold">
+            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 mx-auto  py-2 font-bold md:mx-0">
                 Click the headings to view the projects
             </p>
-            <p>
+            <p className="my-2">
                 {`All of these projects can be viewed on my `}
                 <a
                     href="https://github.com/jimmym620"
