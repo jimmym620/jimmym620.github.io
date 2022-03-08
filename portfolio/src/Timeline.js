@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import timeline from "./abt-timeline-data";
 
 const Timeline = () => {
