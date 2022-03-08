@@ -36,26 +36,26 @@ function App() {
                     <div className="main-container md:grid md:grid-cols-3 md:grid-rows-1">
                         <nav className="nav grid justify-items-center md:justify-items-center md:col-span-1 ">
                             <ul>
-                                <li>
-                                    <h3>
-                                        <Link to="/">Home</Link>
-                                    </h3>
-                                </li>
-                                <li>
-                                    <h3>
-                                        <Link to="/about">About</Link>
-                                    </h3>
-                                </li>
-                                <li>
-                                    <h3>
-                                        <Link to="/myProjects">Projects</Link>
-                                    </h3>
-                                </li>
-                                <li>
-                                    <h3>
-                                        <Link to="/contact">Contact</Link>
-                                    </h3>
-                                </li>
+                                <Link to="/">
+                                    <li>
+                                        <h3>Home</h3>
+                                    </li>
+                                </Link>
+                                <Link to="/about">
+                                    <li>
+                                        <h3>About</h3>
+                                    </li>
+                                </Link>
+                                <Link to="/myProjects">
+                                    <li>
+                                        <h3>Projects</h3>
+                                    </li>
+                                </Link>
+                                <Link to="/contact">
+                                    <li>
+                                        <h3>Contact</h3>
+                                    </li>
+                                </Link>
                             </ul>
                         </nav>
                         {/* A <Switch> looks through its children <Route>s and
@@ -97,22 +97,21 @@ function Home() {
             <h5>Here is my current tech stack:</h5>
             <ul>
                 <li>HTML</li>
-                <li>CSS</li>
+                <li>CSS and SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Python</li>
             </ul>
             <h5>These are what I am currently learning:</h5>
             <ul>
-                <li>SASS</li>
                 <li>React Router</li>
                 <li>TailwindCSS</li>
+                <li>Next.js</li>
             </ul>
             <h5>What I want to learn next...</h5>
             <ul>
                 <li>Redux</li>
-                <li>Bulma (CSS framework)</li>
-                <li>Next.js or Gatsby</li>
+                <li>Gatsby</li>
             </ul>
         </div>
     );
