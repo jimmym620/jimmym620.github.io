@@ -122,7 +122,7 @@ function About() {
         <div>
             <h2>About me</h2>
 
-            <h3>My current career timeline</h3>
+            <h3>Timeline</h3>
             <Timeline />
         </div>
     );

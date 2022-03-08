@@ -10,6 +10,6 @@ export default [
         id: 2,
         heading: "Looking for work",
         yearsBetween: "2021-present",
-        desc: "Began my web developer journey by learning Javascript and React",
+        desc: "Began my web developer journey by learning Javascript and React in addtion to further expanding on CSS skills",
     },
 ];
