@@ -164,10 +164,6 @@ function Contact() {
                     url="https://www.linkedin.com/in/chun-ming-jimmy-man"
                     target="_blank"
                 />
-                <SocialIcon
-                    url="https://discordapp.com/users/175963962003685376"
-                    target="_blank"
-                />
             </div>
             <h3>Email: jimmym620@gmail.com</h3>
             <h3>Phone: (+44) 7587789376</h3>
