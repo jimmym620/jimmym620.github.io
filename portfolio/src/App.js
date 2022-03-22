@@ -132,7 +132,7 @@ function MyProjects() {
     return (
         <div>
             <h2>My completed projects </h2>
-            <p className="bg-amber-100 dark:bg-yellow-600 w-1/2 mx-auto  py-2 font-bold md:mx-0">
+            <p className="text-center bg-amber-100 dark:bg-yellow-600 w-1/2 mx-auto  py-2 font-bold md:mx-0">
                 Click the headings to view the projects
             </p>
             <p className="my-2">
