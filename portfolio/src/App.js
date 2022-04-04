@@ -90,28 +90,31 @@ function Home() {
             <h2 className="hello">Hello! Welcome to my portfolio</h2>
             <p className="w-4/5 mx-auto md:w-1/2 md:mx-0 ">
                 I am Computer Science graduate looking to join the world of web
-                development. At the moment, I am seeking work on front end
-                development but my goal is to eventually to move into full
+                development. Currently looking for work on front end
+                development but my goal is to eventually to move to full
                 stack.
             </p>
-            <h5>Here is my current tech stack:</h5>
+            <h5>Here is my current tech stack/skills:</h5>
             <ul>
                 <li>HTML</li>
                 <li>CSS and SASS</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>Next.js</li>
                 <li>Python</li>
             </ul>
             <h5>These are what I am currently learning:</h5>
             <ul>
                 <li>React Router</li>
                 <li>TailwindCSS</li>
-                <li>Next.js</li>
+                <li>MongoDB</li>
+                <li>Express.js</li>
             </ul>
             <h5>What I want to learn next...</h5>
             <ul>
                 <li>Redux</li>
                 <li>Gatsby</li>
+                <li>ChakraUI</li>
             </ul>
         </div>
     );
@@ -119,7 +122,7 @@ function Home() {
 
 function About() {
     return (
-        <div>
+        <div className="w-1/2">
             <h2>About me</h2>
 
             <h3>Timeline</h3>
@@ -154,7 +157,7 @@ function MyProjects() {
 function Contact() {
     return (
         <div>
-            <h2>Contact me</h2>
+            <h2>How to contact me</h2>
             <div className="icon-container">
                 <SocialIcon
                     url="https://github.com/jimmym620"

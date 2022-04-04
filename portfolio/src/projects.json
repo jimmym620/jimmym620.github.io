@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Weather app",
+        "gitLink": "https://github.com/jimmym620/weather_app",
         "link": "https://jimmym620-weather-app.netlify.app",
         "tag": ["React", " CSS"," API"],
         "desc": "This project was made using the OpenWeatherMap API which gave access to weather statistics for the current day and for the coming week, I also used their geocode API to get the longitude and latitude of the input cities."
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "title": "Media Library",
+        "gitLink": "https://github.com/jimmym620/media_collection_REACT",
         "link": "https://jimmym620-media-collection.netlify.app/",
         "tag": ["React", " TailwindCSS "],
         "desc": "A CRUD application used to store entries about a users media library/collection (i.e, books, movies, music). Made with React, Tailwind and localStorage "
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "title": "Restaurant Menu",
+        "gitLink": "https://github.com/jimmym620/MenuPage_REACT",
         "link": "https://jimmym620-restaurant-menu.netlify.app/",
         "tag": ["React", " NextJS", " SASS"],
         "desc": "A Restaurant menu application made with NextJS, the dish data is stored in JSON and can be conditionally rendered using react components"
@@ -23,6 +26,7 @@
     {
         "id": 4,
         "title": "Google Clone",
+        "gitLink": "https://github.com/jimmym620/GoogleSearchPage",
         "link": "https://jimmym620.github.io/GoogleSearchPage/",
         "tag": ["HTML", " CSS"],
         "desc": "This was one of my first projects where I learned to replicate a landing page with CSS"
@@ -30,6 +34,7 @@
     {
         "id": 5,
         "title": "Mint Sign-up Clone",
+        "gitLink": "https://github.com/jimmym620/Mint.com_Signup_Clone",
         "link": "https://jimmym620.github.io/Mint.com_Signup_Clone/",
         "tag": ["HTML", " CSS"],
         "desc": "Another vanilla CSS replication project - a sign up form for creating a new account. "
@@ -37,6 +42,7 @@
     {
         "id": 6,
         "title": "This portfolio",
+        "gitLink": "https://github.com/jimmym620/portfolio_REACT",
         "tag": ["React", " TailwindCSS" ],
         "desc": "Though not finished, this portfolio was made using React-Router and Tailwind CSS"
     }

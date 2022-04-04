@@ -5,15 +5,30 @@ const Projects = () => {
     return (
         <div className="project-list">
             {data.map((project, index) => {
-                const { id, title, link, tag, desc } = project;
+                const { id, title, gitLink, link, tag, desc } = project;
                 return (
                     <article key={id} className="project">
                         <div>
-                            <h3 className="  bg-neutral-300 dark:bg-sky-800 w-1/2 text-center py-4 mx-auto my-2 md:mx-0 underline">
-                                <a href={link} target="_blank" rel="noreferrer">
-                                    {title}
-                                </a>
-                            </h3>
+                            <div className="bg-neutral-300 dark:bg-sky-800 w-1/2 py-2 my-4 md:mx-0 underline">
+                                <h3 className="text-center m-0">
+                                    <a
+                                        href={link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {title}
+                                    </a>
+                                </h3>
+                                <h4 className="text-center m-0">
+                                    <a
+                                        href={gitLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        GitHub
+                                    </a>
+                                </h4>
+                            </div>
 
                             <ul className="bg-slate-300 w-1/2 py-1 pl-1 text-center">
                                 {tag + " "}
