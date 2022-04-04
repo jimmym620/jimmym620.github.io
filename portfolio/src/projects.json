@@ -9,7 +9,7 @@
     {
         "id": 2,
         "title": "Media Library",
-        "link": "https://crud-media-collection.netlify.app/",
+        "link": "https://jimmym620-media-collection.netlify.app/",
         "tag": ["React", " TailwindCSS "],
         "desc": "A CRUD application used to store entries about a users media library/collection (i.e, books, movies, music). Made with React, Tailwind and localStorage "
     },
